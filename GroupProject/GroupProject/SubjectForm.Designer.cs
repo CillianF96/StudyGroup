@@ -50,9 +50,10 @@
             // 
             // btnSubjectCancel
             // 
-            btnSubjectCancel.Location = new Point(163, 407);
+            btnSubjectCancel.Location = new Point(263, 431);
+            btnSubjectCancel.Margin = new Padding(4);
             btnSubjectCancel.Name = "btnSubjectCancel";
-            btnSubjectCancel.Size = new Size(94, 29);
+            btnSubjectCancel.Size = new Size(118, 43);
             btnSubjectCancel.TabIndex = 35;
             btnSubjectCancel.Text = "Cancel";
             btnSubjectCancel.UseVisualStyleBackColor = true;
@@ -60,148 +61,166 @@
             // 
             // btnAddSubject
             // 
-            btnAddSubject.Location = new Point(12, 407);
+            btnAddSubject.Location = new Point(33, 431);
+            btnAddSubject.Margin = new Padding(4);
             btnAddSubject.Name = "btnAddSubject";
-            btnAddSubject.Size = new Size(108, 29);
+            btnAddSubject.Size = new Size(135, 43);
             btnAddSubject.TabIndex = 34;
             btnAddSubject.Text = "Add Subject";
             btnAddSubject.UseVisualStyleBackColor = true;
+            btnAddSubject.Click += btnAddSubject_Click;
             // 
             // cbxSubjectYear
             // 
             cbxSubjectYear.FormattingEnabled = true;
             cbxSubjectYear.Items.AddRange(new object[] { "1", "2", "3", "4" });
-            cbxSubjectYear.Location = new Point(113, 167);
+            cbxSubjectYear.Location = new Point(193, 168);
+            cbxSubjectYear.Margin = new Padding(4);
             cbxSubjectYear.Name = "cbxSubjectYear";
-            cbxSubjectYear.Size = new Size(151, 28);
+            cbxSubjectYear.Size = new Size(188, 33);
             cbxSubjectYear.TabIndex = 32;
             // 
             // txtSubjectRoles
             // 
-            txtSubjectRoles.Location = new Point(132, 355);
+            txtSubjectRoles.Location = new Point(193, 367);
+            txtSubjectRoles.Margin = new Padding(4);
             txtSubjectRoles.Name = "txtSubjectRoles";
-            txtSubjectRoles.Size = new Size(125, 27);
+            txtSubjectRoles.Size = new Size(188, 31);
             txtSubjectRoles.TabIndex = 31;
             // 
             // lblRoles
             // 
             lblRoles.AutoSize = true;
-            lblRoles.Location = new Point(12, 358);
+            lblRoles.Location = new Point(15, 373);
+            lblRoles.Margin = new Padding(4, 0, 4, 0);
             lblRoles.Name = "lblRoles";
-            lblRoles.Size = new Size(48, 20);
+            lblRoles.Size = new Size(58, 25);
             lblRoles.TabIndex = 30;
             lblRoles.Text = "Roles:";
             // 
             // txtSubjectMaterials
             // 
-            txtSubjectMaterials.Location = new Point(106, 307);
+            txtSubjectMaterials.Location = new Point(193, 320);
+            txtSubjectMaterials.Margin = new Padding(4);
             txtSubjectMaterials.Name = "txtSubjectMaterials";
-            txtSubjectMaterials.Size = new Size(125, 27);
+            txtSubjectMaterials.Size = new Size(188, 31);
             txtSubjectMaterials.TabIndex = 29;
             // 
             // lblStudyMats
             // 
             lblStudyMats.AutoSize = true;
-            lblStudyMats.Location = new Point(12, 310);
+            lblStudyMats.Location = new Point(15, 323);
+            lblStudyMats.Margin = new Padding(4, 0, 4, 0);
             lblStudyMats.Name = "lblStudyMats";
-            lblStudyMats.Size = new Size(114, 20);
+            lblStudyMats.Size = new Size(137, 25);
             lblStudyMats.TabIndex = 28;
             lblStudyMats.Text = "Study Materials:";
             // 
             // lblSubjectProjects
             // 
             lblSubjectProjects.AutoSize = true;
-            lblSubjectProjects.Location = new Point(12, 270);
+            lblSubjectProjects.Location = new Point(15, 274);
+            lblSubjectProjects.Margin = new Padding(4, 0, 4, 0);
             lblSubjectProjects.Name = "lblSubjectProjects";
-            lblSubjectProjects.Size = new Size(64, 20);
+            lblSubjectProjects.Size = new Size(78, 25);
             lblSubjectProjects.TabIndex = 27;
             lblSubjectProjects.Text = "Projects:";
             // 
             // txtPreReq
             // 
-            txtPreReq.Location = new Point(106, 216);
+            txtPreReq.Location = new Point(193, 220);
+            txtPreReq.Margin = new Padding(4);
             txtPreReq.Name = "txtPreReq";
-            txtPreReq.Size = new Size(125, 27);
+            txtPreReq.Size = new Size(188, 31);
             txtPreReq.TabIndex = 26;
             // 
             // lblPreReq
             // 
             lblPreReq.AutoSize = true;
-            lblPreReq.Location = new Point(12, 219);
+            lblPreReq.Location = new Point(15, 226);
+            lblPreReq.Margin = new Padding(4, 0, 4, 0);
             lblPreReq.Name = "lblPreReq";
-            lblPreReq.Size = new Size(96, 20);
+            lblPreReq.Size = new Size(116, 25);
             lblPreReq.TabIndex = 25;
             lblPreReq.Text = "Prerequisites:";
             // 
             // lblSubjectYear
             // 
             lblSubjectYear.AutoSize = true;
-            lblSubjectYear.Location = new Point(12, 170);
+            lblSubjectYear.Location = new Point(15, 176);
+            lblSubjectYear.Margin = new Padding(4, 0, 4, 0);
             lblSubjectYear.Name = "lblSubjectYear";
-            lblSubjectYear.Size = new Size(93, 20);
+            lblSubjectYear.Size = new Size(111, 25);
             lblSubjectYear.TabIndex = 24;
             lblSubjectYear.Text = "Subject Year:";
             // 
             // txtOutcomes
             // 
-            txtOutcomes.Location = new Point(106, 114);
+            txtOutcomes.Location = new Point(193, 115);
+            txtOutcomes.Margin = new Padding(4);
             txtOutcomes.Name = "txtOutcomes";
-            txtOutcomes.Size = new Size(125, 27);
+            txtOutcomes.Size = new Size(188, 31);
             txtOutcomes.TabIndex = 23;
             // 
             // lblLearning
             // 
             lblLearning.AutoSize = true;
-            lblLearning.Location = new Point(12, 117);
+            lblLearning.Location = new Point(15, 118);
+            lblLearning.Margin = new Padding(4, 0, 4, 0);
             lblLearning.Name = "lblLearning";
-            lblLearning.Size = new Size(140, 20);
+            lblLearning.Size = new Size(170, 25);
             lblLearning.TabIndex = 22;
             lblLearning.Text = "Learning Outcomes:";
             // 
             // txtSubjectDescription
             // 
-            txtSubjectDescription.Location = new Point(106, 63);
+            txtSubjectDescription.Location = new Point(193, 67);
+            txtSubjectDescription.Margin = new Padding(4);
             txtSubjectDescription.Name = "txtSubjectDescription";
-            txtSubjectDescription.Size = new Size(125, 27);
+            txtSubjectDescription.Size = new Size(188, 31);
             txtSubjectDescription.TabIndex = 21;
             // 
             // lblDescription
             // 
             lblDescription.AutoSize = true;
-            lblDescription.Location = new Point(12, 66);
+            lblDescription.Location = new Point(15, 73);
+            lblDescription.Margin = new Padding(4, 0, 4, 0);
             lblDescription.Name = "lblDescription";
-            lblDescription.Size = new Size(88, 20);
+            lblDescription.Size = new Size(106, 25);
             lblDescription.TabIndex = 20;
             lblDescription.Text = "Description:";
             // 
             // txtSubjectName
             // 
-            txtSubjectName.Location = new Point(106, 17);
+            txtSubjectName.Location = new Point(193, 25);
+            txtSubjectName.Margin = new Padding(4);
             txtSubjectName.Name = "txtSubjectName";
-            txtSubjectName.Size = new Size(125, 27);
+            txtSubjectName.Size = new Size(188, 31);
             txtSubjectName.TabIndex = 19;
             // 
             // lblStubjectName
             // 
             lblStubjectName.AutoSize = true;
-            lblStubjectName.Location = new Point(12, 20);
+            lblStubjectName.Location = new Point(15, 28);
+            lblStubjectName.Margin = new Padding(4, 0, 4, 0);
             lblStubjectName.Name = "lblStubjectName";
-            lblStubjectName.Size = new Size(52, 20);
+            lblStubjectName.Size = new Size(63, 25);
             lblStubjectName.TabIndex = 18;
             lblStubjectName.Text = "Name:";
             // 
             // txtSubjectProjects
             // 
-            txtSubjectProjects.Location = new Point(106, 267);
+            txtSubjectProjects.Location = new Point(193, 268);
+            txtSubjectProjects.Margin = new Padding(4);
             txtSubjectProjects.Name = "txtSubjectProjects";
-            txtSubjectProjects.Size = new Size(125, 27);
+            txtSubjectProjects.Size = new Size(188, 31);
             txtSubjectProjects.TabIndex = 36;
             // 
-            // SujectForm
+            // SubjectForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(370, 450);
+            ClientSize = new Size(427, 497);
             Controls.Add(txtSubjectProjects);
             Controls.Add(btnSubjectCancel);
             Controls.Add(btnAddSubject);
@@ -220,8 +239,10 @@
             Controls.Add(lblDescription);
             Controls.Add(txtSubjectName);
             Controls.Add(lblStubjectName);
-            Name = "SujectForm";
-            Text = "SubjectForm";
+            Margin = new Padding(4);
+            Name = "SubjectForm";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Study Group | Add Subject";
             ResumeLayout(false);
             PerformLayout();
         }

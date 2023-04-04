@@ -4,9 +4,6 @@
     <Compile Update="Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="MainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="SessionsForm.cs">
       <SubType>Form</SubType>
     </Compile>

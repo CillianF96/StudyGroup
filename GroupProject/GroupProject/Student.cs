@@ -31,14 +31,14 @@ namespace GroupProject
 
         public Student(string Sname, int StAge, string Sgender, int Syear, string kNum, string Scounty, string Savail, string SPhone)
         {
-            this.StudentName =" ";
-            this.StudentAge = 0;
-            this.Gender = " ";
-            this.StudyYear = 0;
-            this.KNum = " ";
-            this.County = " ";
-            this.Availability = " ";
-            this.StudentPhoneNumber = " ";
+            this.StudentName = Sname;
+            this.StudentAge = StAge;
+            this.Gender = Sgender;
+            this.StudyYear = Syear;
+            this.KNum = kNum;
+            this.County = Scounty;
+            this.Availability = Savail;
+            this.StudentPhoneNumber = SPhone;
 
         }
 

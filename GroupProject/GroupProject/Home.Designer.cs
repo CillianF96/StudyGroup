@@ -28,22 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             tabControl1 = new TabControl();
             tabStudent = new TabPage();
-            tabSubject = new TabPage();
-            tabSessions = new TabPage();
-            dgvStudent = new DataGridView();
+            lblStudentTabTitle = new Label();
             btnAddStudentHome = new Button();
+            dgvStudent = new DataGridView();
+            tabSubject = new TabPage();
+            lblSubjectTabTitle = new Label();
             btnAddSubjectHome = new Button();
             dgvSubject = new DataGridView();
+            tabSessions = new TabPage();
+            lblSessionTabTitle = new Label();
             btnAddSessionHome = new Button();
             dgvSessions = new DataGridView();
             tabControl1.SuspendLayout();
             tabStudent.SuspendLayout();
-            tabSubject.SuspendLayout();
-            tabSessions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvStudent).BeginInit();
+            tabSubject.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvSubject).BeginInit();
+            tabSessions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvSessions).BeginInit();
             SuspendLayout();
             // 
@@ -52,77 +56,98 @@
             tabControl1.Controls.Add(tabStudent);
             tabControl1.Controls.Add(tabSubject);
             tabControl1.Controls.Add(tabSessions);
-            tabControl1.Location = new Point(2, 12);
+            tabControl1.Location = new Point(0, 0);
+            tabControl1.Margin = new Padding(4);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(724, 387);
+            tabControl1.Size = new Size(998, 484);
             tabControl1.TabIndex = 0;
             // 
             // tabStudent
             // 
+            tabStudent.Controls.Add(lblStudentTabTitle);
             tabStudent.Controls.Add(btnAddStudentHome);
             tabStudent.Controls.Add(dgvStudent);
-            tabStudent.Location = new Point(4, 29);
+            tabStudent.Location = new Point(4, 34);
+            tabStudent.Margin = new Padding(4);
             tabStudent.Name = "tabStudent";
-            tabStudent.Padding = new Padding(3);
-            tabStudent.Size = new Size(716, 354);
+            tabStudent.Padding = new Padding(4);
+            tabStudent.Size = new Size(990, 446);
             tabStudent.TabIndex = 0;
             tabStudent.Text = "Student";
             tabStudent.UseVisualStyleBackColor = true;
             tabStudent.Click += tabStudent_Click;
             // 
-            // tabSubject
+            // lblStudentTabTitle
             // 
-            tabSubject.Controls.Add(btnAddSubjectHome);
-            tabSubject.Controls.Add(dgvSubject);
-            tabSubject.Location = new Point(4, 29);
-            tabSubject.Name = "tabSubject";
-            tabSubject.Padding = new Padding(3);
-            tabSubject.Size = new Size(716, 354);
-            tabSubject.TabIndex = 1;
-            tabSubject.Text = "Subject";
-            tabSubject.UseVisualStyleBackColor = true;
-            tabSubject.Click += tabSubject_Click;
-            // 
-            // tabSessions
-            // 
-            tabSessions.Controls.Add(btnAddSessionHome);
-            tabSessions.Controls.Add(dgvSessions);
-            tabSessions.Location = new Point(4, 29);
-            tabSessions.Name = "tabSessions";
-            tabSessions.Padding = new Padding(3);
-            tabSessions.Size = new Size(716, 354);
-            tabSessions.TabIndex = 2;
-            tabSessions.Text = "Sessions";
-            tabSessions.UseVisualStyleBackColor = true;
-            tabSessions.Click += tabSessions_Click;
-            // 
-            // dgvStudent
-            // 
-            dgvStudent.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvStudent.Location = new Point(51, 28);
-            dgvStudent.Name = "dgvStudent";
-            dgvStudent.RowHeadersWidth = 51;
-            dgvStudent.RowTemplate.Height = 29;
-            dgvStudent.Size = new Size(613, 255);
-            dgvStudent.TabIndex = 0;
-            dgvStudent.CellContentClick += dgvStudent_CellContentClick;
+            lblStudentTabTitle.AutoSize = true;
+            lblStudentTabTitle.Font = new Font("Century Gothic", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            lblStudentTabTitle.ForeColor = Color.MidnightBlue;
+            lblStudentTabTitle.Location = new Point(20, 15);
+            lblStudentTabTitle.Name = "lblStudentTabTitle";
+            lblStudentTabTitle.Size = new Size(273, 23);
+            lblStudentTabTitle.TabIndex = 2;
+            lblStudentTabTitle.Text = "Study Group | Add Student";
             // 
             // btnAddStudentHome
             // 
-            btnAddStudentHome.Location = new Point(51, 306);
+            btnAddStudentHome.Font = new Font("Consolas", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAddStudentHome.ForeColor = Color.MidnightBlue;
+            btnAddStudentHome.Location = new Point(730, 390);
+            btnAddStudentHome.Margin = new Padding(4);
             btnAddStudentHome.Name = "btnAddStudentHome";
-            btnAddStudentHome.Size = new Size(164, 29);
+            btnAddStudentHome.Size = new Size(205, 35);
             btnAddStudentHome.TabIndex = 1;
             btnAddStudentHome.Text = "Add Student";
             btnAddStudentHome.UseVisualStyleBackColor = true;
             btnAddStudentHome.Click += btnAddStudentHome_Click;
             // 
+            // dgvStudent
+            // 
+            dgvStudent.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvStudent.Location = new Point(20, 50);
+            dgvStudent.Margin = new Padding(4);
+            dgvStudent.Name = "dgvStudent";
+            dgvStudent.RowHeadersWidth = 51;
+            dgvStudent.RowTemplate.Height = 29;
+            dgvStudent.Size = new Size(960, 320);
+            dgvStudent.TabIndex = 0;
+            dgvStudent.CellContentClick += dgvStudent_CellContentClick;
+            // 
+            // tabSubject
+            // 
+            tabSubject.Controls.Add(lblSubjectTabTitle);
+            tabSubject.Controls.Add(btnAddSubjectHome);
+            tabSubject.Controls.Add(dgvSubject);
+            tabSubject.Location = new Point(4, 34);
+            tabSubject.Margin = new Padding(4);
+            tabSubject.Name = "tabSubject";
+            tabSubject.Padding = new Padding(4);
+            tabSubject.Size = new Size(990, 446);
+            tabSubject.TabIndex = 1;
+            tabSubject.Text = "Subject";
+            tabSubject.UseVisualStyleBackColor = true;
+            tabSubject.Click += tabSubject_Click;
+            // 
+            // lblSubjectTabTitle
+            // 
+            lblSubjectTabTitle.AutoSize = true;
+            lblSubjectTabTitle.Font = new Font("Century Gothic", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSubjectTabTitle.ForeColor = Color.MidnightBlue;
+            lblSubjectTabTitle.Location = new Point(20, 15);
+            lblSubjectTabTitle.Name = "lblSubjectTabTitle";
+            lblSubjectTabTitle.Size = new Size(273, 23);
+            lblSubjectTabTitle.TabIndex = 4;
+            lblSubjectTabTitle.Text = "Study Group | Add Subject";
+            // 
             // btnAddSubjectHome
             // 
-            btnAddSubjectHome.Location = new Point(52, 302);
+            btnAddSubjectHome.Font = new Font("Consolas", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAddSubjectHome.ForeColor = Color.MidnightBlue;
+            btnAddSubjectHome.Location = new Point(730, 390);
+            btnAddSubjectHome.Margin = new Padding(4);
             btnAddSubjectHome.Name = "btnAddSubjectHome";
-            btnAddSubjectHome.Size = new Size(164, 29);
+            btnAddSubjectHome.Size = new Size(205, 35);
             btnAddSubjectHome.TabIndex = 3;
             btnAddSubjectHome.Text = "Add Subject";
             btnAddSubjectHome.UseVisualStyleBackColor = true;
@@ -131,19 +156,50 @@
             // dgvSubject
             // 
             dgvSubject.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvSubject.Location = new Point(52, 24);
+            dgvSubject.Location = new Point(20, 50);
+            dgvSubject.Margin = new Padding(4);
             dgvSubject.Name = "dgvSubject";
             dgvSubject.RowHeadersWidth = 51;
             dgvSubject.RowTemplate.Height = 29;
-            dgvSubject.Size = new Size(613, 255);
+            dgvSubject.Size = new Size(960, 320);
             dgvSubject.TabIndex = 2;
             dgvSubject.CellContentClick += dgvSubject_CellContentClick;
             // 
+            // tabSessions
+            // 
+            tabSessions.Controls.Add(lblSessionTabTitle);
+            tabSessions.Controls.Add(btnAddSessionHome);
+            tabSessions.Controls.Add(dgvSessions);
+            tabSessions.Location = new Point(4, 34);
+            tabSessions.Margin = new Padding(4);
+            tabSessions.Name = "tabSessions";
+            tabSessions.Padding = new Padding(4);
+            tabSessions.Size = new Size(990, 446);
+            tabSessions.TabIndex = 2;
+            tabSessions.Text = "Sessions";
+            tabSessions.UseVisualStyleBackColor = true;
+            tabSessions.Click += tabSessions_Click;
+            // 
+            // lblSessionTabTitle
+            // 
+            lblSessionTabTitle.AutoSize = true;
+            lblSessionTabTitle.BackColor = Color.Transparent;
+            lblSessionTabTitle.Font = new Font("Century Gothic", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSessionTabTitle.ForeColor = Color.MidnightBlue;
+            lblSessionTabTitle.Location = new Point(20, 15);
+            lblSessionTabTitle.Name = "lblSessionTabTitle";
+            lblSessionTabTitle.Size = new Size(272, 23);
+            lblSessionTabTitle.TabIndex = 4;
+            lblSessionTabTitle.Text = "Study Group | Add Session";
+            // 
             // btnAddSessionHome
             // 
-            btnAddSessionHome.Location = new Point(52, 302);
+            btnAddSessionHome.Font = new Font("Consolas", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAddSessionHome.ForeColor = Color.MidnightBlue;
+            btnAddSessionHome.Location = new Point(730, 390);
+            btnAddSessionHome.Margin = new Padding(4);
             btnAddSessionHome.Name = "btnAddSessionHome";
-            btnAddSessionHome.Size = new Size(164, 29);
+            btnAddSessionHome.Size = new Size(205, 35);
             btnAddSessionHome.TabIndex = 3;
             btnAddSessionHome.Text = "Add Session";
             btnAddSessionHome.UseVisualStyleBackColor = true;
@@ -152,28 +208,37 @@
             // dgvSessions
             // 
             dgvSessions.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvSessions.Location = new Point(52, 24);
+            dgvSessions.Location = new Point(20, 50);
+            dgvSessions.Margin = new Padding(4);
             dgvSessions.Name = "dgvSessions";
             dgvSessions.RowHeadersWidth = 51;
             dgvSessions.RowTemplate.Height = 29;
-            dgvSessions.Size = new Size(613, 255);
+            dgvSessions.Size = new Size(960, 320);
             dgvSessions.TabIndex = 2;
             dgvSessions.CellContentClick += dgvSessions_CellContentClick;
             // 
             // Home
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1011, 481);
             Controls.Add(tabControl1);
+            Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4);
             Name = "Home";
-            Text = "Home";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Study Group | Home";
+            Load += Home_Load;
             tabControl1.ResumeLayout(false);
             tabStudent.ResumeLayout(false);
-            tabSubject.ResumeLayout(false);
-            tabSessions.ResumeLayout(false);
+            tabStudent.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvStudent).EndInit();
+            tabSubject.ResumeLayout(false);
+            tabSubject.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvSubject).EndInit();
+            tabSessions.ResumeLayout(false);
+            tabSessions.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvSessions).EndInit();
             ResumeLayout(false);
         }
@@ -190,5 +255,8 @@
         private DataGridView dgvSubject;
         private Button btnAddSessionHome;
         private DataGridView dgvSessions;
+        private Label lblStudentTabTitle;
+        private Label lblSubjectTabTitle;
+        private Label lblSessionTabTitle;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GroupProject
 {
@@ -20,6 +21,11 @@ namespace GroupProject
         private void btnSubjectCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnAddSubject_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

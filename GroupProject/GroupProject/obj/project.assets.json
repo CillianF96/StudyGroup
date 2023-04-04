@@ -8,23 +8,23 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\fergu\\.nuget\\packages\\": {},
+    "C:\\Users\\jackf\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fergu\\OneDrive\\Desktop\\GroupProject\\GroupProject\\GroupProject.csproj",
+      "projectUniqueName": "C:\\Users\\jackf\\OneDrive\\Desktop\\Liz-ProjectStudyGroup\\GroupProject\\GroupProject\\GroupProject.csproj",
       "projectName": "GroupProject",
-      "projectPath": "C:\\Users\\fergu\\OneDrive\\Desktop\\GroupProject\\GroupProject\\GroupProject.csproj",
-      "packagesPath": "C:\\Users\\fergu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fergu\\OneDrive\\Desktop\\GroupProject\\GroupProject\\obj\\",
+      "projectPath": "C:\\Users\\jackf\\OneDrive\\Desktop\\Liz-ProjectStudyGroup\\GroupProject\\GroupProject\\GroupProject.csproj",
+      "packagesPath": "C:\\Users\\jackf\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jackf\\OneDrive\\Desktop\\Liz-ProjectStudyGroup\\GroupProject\\GroupProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\fergu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jackf\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -33,7 +33,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -70,7 +69,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

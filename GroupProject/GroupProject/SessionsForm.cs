@@ -21,5 +21,10 @@ namespace GroupProject
         {
             this.Close();
         }
+
+        private void btnAddSessions_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
