@@ -1,2 +1,2 @@
-# Liz-ProjectStudyGroup
-Study Group Application
+# StudyGroup
+This is a Study Group Application using Windows Forms
